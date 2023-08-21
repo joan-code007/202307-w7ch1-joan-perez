@@ -1,6 +1,6 @@
 import { type Thing } from "./types";
 
-export const thingsData: Thing[] = [
+export const things: Thing[] = [
   {
     id: 1,
     name: "Play football",
