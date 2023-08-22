@@ -1,8 +1,5 @@
-import express from "express";
-import thingsRouter from "./routers/thingsRouter.js";
+import startServer from "./routes/startServer.js";
 
-const app = express();
+const port = process.env.PORT ?? 4000;
 
-app.use("/things", thingsRouter);
-
-export default app;
+startServer(Number(port));
