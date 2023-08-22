@@ -18,4 +18,10 @@ describe("Given a things controller", () => {
       expect(res.status).toHaveBeenCalledWith(expectedCode);
     });
   });
+
+  test.only("Then it should call its method json", () => {
+    getThings(req as Request, res as Response);
+
+    expect(res.json).toHaveBeenCalledWith({});
+  });
 });
