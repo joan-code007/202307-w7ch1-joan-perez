@@ -1,5 +1,5 @@
 import { type Request, type Response } from "express";
-import { getThings } from "../controllers/thingsControllers.js";
+import { getThings } from "../thingsControllers.js";
 
 const req: Partial<Request> = {};
 
